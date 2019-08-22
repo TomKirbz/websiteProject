@@ -47,23 +47,23 @@ header {
 .logo {
     width: 144px;
     height: 17.55px;
-    padding: 12px 50px 0 0;
+    padding: 14px 50px 0 0;
 }
 
 .spacer {
-    padding: 4px 0;
+    padding-top: 8px;
     margin: 6px 16px 0 0;
     font-weight: lighter;
     color: white;
 }
 
-#nav2 > li {
-    padding: 6px 0;
-    margin: 0 16px 0 0;
+.nav2li {
+    margin: 0 0 0 0;
     color: white;
     font-size: 15px;
     font-weight: 600;
-    padding-top: 10px;
+    padding-top: 15px;
+    padding-right: 15px;
     }
 
 .save {
@@ -97,15 +97,234 @@ header {
 .main {
     margin: 0 auto 0 auto;
     width: 1024px;
-    z-index: 0;
 }
 
 .row1 {
     padding-top: 81px;
+    display: flex;
+    position: relative;
 }
 
 .panel {
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    width: 315px;
+    height: 350px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: white;
+    padding: 8px 0 0 16px;
+    position: absolute;
+    right: 66%;
+    top: 20%;
+}
+
+.title {
+    width: 336px;
+    height: 28px;
+    font-size: 24px;
+    padding-top: 9px;
+    color: #313c53;
+}
+
+input[type=text] {
+    background-color: #e8e8e3;
+    border: 2px solid #e8e8e3;
+    border-radius: 5px;
+    padding: 15px 10px 15px 5px;
+    font-weight: lighter;
+    font-size: 14px;
+    width: 121px;
+    margin-right: 15px;
+}
+
+.postcode__distance {
+    width: 310px;
+    height: 35px;
+    font-size: 14px;
+    display: flex;
+}
+
+.make__model {
+    width: 310px;
+    height: 35px;
+    font-size: 14px;
+    display: flex;
+}
+.TMprice {
+    width: 287px;
+    height: 28px;
+    font-size: 14px;
+    display: flex;
+    background-color: #e8e8e3;
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+
+}
+.MMprice {
+    width: 310px;
+    height: 35px;
+    font-size: 14px;
+    display: flex;
+}
+
+.panel-li {
+    background-color: #e8e8e3;
+    border-radius: 3px;
+    font-weight: lighter;
+    margin-right: 15px;
+    color: #666;
+    padding: 10px 5px 10px 10px;
+    width: 125px;
+}
+
+.price-li {
+    background-color: white;
+    border-radius: 50px;
+    font-weight: lighter;
+    margin-right: 15px;
+    color: #666;
+    z-index: 2;
+    width: 50%;
+    padding: 10px 5px 10px 10px;
+    height: 15px;
+    border: 2px solid #06a09d;
+    position: relative;
+    left: -5px;
+    top: -5px;
+}
+
+.monthy-li {
+    background-color: #e8e8e3;
+    border-radius: 3px;
+    font-weight: lighter;
+    margin-right: 15px;
+    color: #666;
+    padding: 5px 5px 10px 10px;
+    width: 125px;
+}
+
+.moreOptions {
+    display: flex;
+    width: 310px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.search {
+    background-color: #ff3535;
+    border-radius: 30px;
+    color: white;
+    width: 297px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    font-weight: 500;
+}
+
+.Rsearch {
+    font-size: 14px;
+    color: #2a65ba;
+    align-items: flex-start;
+    width: 50%;
+    padding: 0 0 0 15px;
+}
+
+.Moptions {
+    font-size: 14px;
+    color: #2a65ba;
+    align-items: flex-end;
+    width: 50%;
+    padding: 0 0 0 100px;
+}
+.row2 {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0 0 12px;
+}
+.carDeals {
+    font-size: 19px;
+    color: #ff4436;
+    font-weight: 500;
+}
+.latest {
+    font-size: 25px;
+    color: #313c53;
+    font-weight: 500;
+}
+.row3 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.row4 {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+footer {
+    width: 100%;
+    height: 607px;
+    background-color: #313c53;
+    list-style: none;
+}
+
+.footerContentContainer {
+    margin-left: 460px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.footerContentTitle {
+    color: white;
+    font-size: 18px;
+    padding: 8px 0 8px 0;
+}
+.footerLi {
+    color: #d0d0cb;
+    font-size: 14px;
+    padding: 11px 0 11px 0;
+}
+
+.footerContent-1 {
+    width: 250px;
+}
+
+.footerContent-2 {
+    width: 250px;
+}
+.footerContent-3 {
+    width: 250px;
+}
+
+.footerContent-4 {
+    width: 210px;
+}
+.footerContent-5 {
+    width: 210px;
+}
+
+.copyright {
+    color: #aaaaa7; 
+    font-size: 12px; 
+}
+.copyright2 {
+    color: #aaaaa7;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 2000px) {
+    .nav2li {
+      font-size: 14px;
+    }
 }
