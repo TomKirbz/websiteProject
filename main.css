@@ -4,7 +4,6 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    max-width: 100%;
 }
 
 header {
@@ -92,6 +91,7 @@ header {
     position: relative;
     left: 62%;
     top: -30px;
+    width: 700px;
 }
 
 .main {
@@ -240,7 +240,7 @@ input[type=text] {
 }
 .row2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 32px 0 0 12px;
 }
 .carDeals {
@@ -272,9 +272,11 @@ footer {
 }
 
 .footerContentContainer {
-    margin-left: 460px;
+    margin: auto;
     padding-top: 30px;
     display: flex;
+    width: 1028px;
+    flex-wrap: wrap; 
 }
 
 .footerContentTitle {
@@ -316,7 +318,9 @@ footer {
     padding-bottom: 20px;
 }
 
-
+li:hover {
+    color: #00d7d2;
+}
 
 
 
