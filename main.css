@@ -11,14 +11,19 @@ header {
     height: 81px;
     background-color: #313c53;
     box-shadow: 0 1px 3px grey;
-    position: absolute;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.navContainer {
+    width: 1028px;
+    margin: auto;
 }
 
 #nav1 {
     list-style-type: none;
     display: flex;
-    margin: 0 0 0 324px;
+    margin: 0 auto 0 auto;
 }
 
 #nav1 .cars {
@@ -27,9 +32,10 @@ header {
     color: #00d7d2;
     font-size: 12px;
     font-weight: 250;
+    cursor: pointer;
     }
 
-#nav1 li {
+.nav1Li {
     padding: 6px 6px 0 0;
     margin: 0 16px 0 0;
     color: #e8e8e3;
@@ -37,16 +43,23 @@ header {
     font-weight: 300;
 }
 
+.nav1spacer {
+    padding: 6px 6px 0 0;
+    margin: 0 16px 0 0;
+    color: #e8e8e3;
+    font-size: 12px;
+}
+
 #nav2 {
     list-style-type: none;
     display: flex;
-    margin: 0 324px;
 }
 
 .logo {
     width: 144px;
     height: 17.55px;
     padding: 14px 50px 0 0;
+    cursor: pointer;
 }
 
 .spacer {
@@ -67,10 +80,12 @@ header {
 
 .save {
     margin: 0 20px 0 200px;
+    cursor: pointer;
 }
 
 .signIn {
     margin: -1px 0 0 0;
+    cursor: pointer;
 }
 
 .sellCar {
@@ -84,6 +99,11 @@ header {
     font-weight: 600;
     position: relative;
     top: -5px;
+    cursor: pointer;
+}
+
+.sellCar:hover {
+    background-color: #da2f2f;
 }
 
 #nav3 {
@@ -100,9 +120,13 @@ header {
 }
 
 .row1 {
-    padding-top: 81px;
     display: flex;
     position: relative;
+    z-index: 1;
+}
+
+.corsa {
+    cursor: pointer;
 }
 
 .panel {
@@ -116,7 +140,8 @@ header {
     padding: 8px 0 0 16px;
     position: absolute;
     right: 66%;
-    top: 20%;
+    top: 5%;
+    z-index: 5;
 }
 
 .title {
@@ -177,6 +202,7 @@ input[type=text] {
     color: #666;
     padding: 10px 5px 10px 10px;
     width: 125px;
+    cursor: pointer;
 }
 
 .price-li {
@@ -193,6 +219,7 @@ input[type=text] {
     position: relative;
     left: -5px;
     top: -5px;
+    cursor: pointer;
 }
 
 .monthy-li {
@@ -203,6 +230,7 @@ input[type=text] {
     color: #666;
     padding: 5px 5px 10px 10px;
     width: 125px;
+    cursor: pointer;
 }
 
 .moreOptions {
@@ -221,6 +249,11 @@ input[type=text] {
     font-size: 16px;
     border: none;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.search:hover {
+    background-color: #da2f2f;
 }
 
 .Rsearch {
@@ -228,8 +261,22 @@ input[type=text] {
     color: #2a65ba;
     align-items: flex-start;
     width: 50%;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 5px;
+    cursor: pointer;
 }
+
+.Rsearch:hover {
+    color: #239599;
+}
+.p-quick-search__reset-icon {
+    padding: 0 0 19px 0;
+    fill: #2a65ba;
+    cursor: pointer;
+}
+.p-quick-search__reset-icon:hover {
+    fill: #239599;
+}
+
 
 .Moptions {
     font-size: 14px;
@@ -237,6 +284,11 @@ input[type=text] {
     align-items: flex-end;
     width: 50%;
     padding: 0 0 0 100px;
+    cursor: pointer;
+}
+
+.Moptions:hover {
+    color: #239599;
 }
 .row2 {
     display: flex;
@@ -247,6 +299,7 @@ input[type=text] {
     font-size: 19px;
     color: #ff4436;
     font-weight: 500;
+    cursor: pointer;
 }
 .latest {
     font-size: 25px;
@@ -257,11 +310,13 @@ input[type=text] {
     padding-top: 20px;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .row4 {
     padding-top: 15px;
     padding-bottom: 30px;
+    cursor: pointer;
 }
 
 footer {
@@ -290,22 +345,11 @@ footer {
     padding: 11px 0 11px 0;
 }
 
-.footerContent-1 {
-    width: 250px;
-}
-
-.footerContent-2 {
-    width: 250px;
-}
-.footerContent-3 {
-    width: 250px;
-}
-
+.footerContent-1,
+.footerContent-2,
+.footerContent-3,
 .footerContent-4 {
-    width: 210px;
-}
-.footerContent-5 {
-    width: 210px;
+    width: 250px;
 }
 
 .copyright {
@@ -318,13 +362,20 @@ footer {
     padding-bottom: 20px;
 }
 
-li:hover {
+.footerLi:hover {
     color: #00d7d2;
+    cursor: pointer;
 }
 
+.nav1Li:hover {
+    color: #00d7d2;
+    cursor: pointer;
+}
 
-
-
+.nav2li:hover {
+    color: #00d7d2;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 2000px) {

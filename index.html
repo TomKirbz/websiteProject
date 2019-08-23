@@ -9,34 +9,36 @@
 </head>
 <body>
     <header>
-        <nav id="nav1">
-            <li class="cars">Cars</li>
-            <li>Prestige cars</li>
-            <li>Vans</li>
-            <li>Bikes</li>
-            <li>Motorhomes</li>
-            <li>Caravans</li>
-            <li>Trucks</li>
-            <li>Farm</li>
-            <li>Plant</li>
-            <li>|</li>
-            <li> Safety & Security Advice</li>
-        </nav>
-        <nav id="nav2">
-            <img class="logo "src="./Images/ATLogo.png" alt="">
-            <li class="nav2li">Buying new & used</li>
-            <div class="spacer">|</div>
-            <li class="nav2li">Sell your car</li>
-            <div class="spacer">|</div>
-            <li class="nav2li">Car reviews</li>
-            <div class="spacer">|</div>
-            <li class="nav2li">Finance, insurance & more</li>
-        </nav>
-        <nav id="nav3">
+        <div class="navContainer">
+            <nav id="nav1">
+                <li class="cars">Cars</li>
+                <li class="nav1Li">Prestige cars</li>
+                <li class="nav1Li">Vans</li>
+                <li class="nav1Li">Bikes</li>
+                <li class="nav1Li">Motorhomes</li>
+                <li class="nav1Li">Caravans</li>
+                <li class="nav1Li">Trucks</li>
+                <li class="nav1Li">Farm</li>
+                <li class="nav1Li">Plant</li>
+                <li class="nav1spacer">|</li>
+                <li class="nav1Li"> Safety & Security Advice</li>
+            </nav>
+            <nav id="nav2">
+                <img class="logo "src="./Images/ATLogo.png" alt="">
+                <li class="nav2li">Buying new & used</li>
+                <div class="spacer">|</div>
+                <li class="nav2li">Sell your car</li>
+                <div class="spacer">|</div>
+                <li class="nav2li">Car reviews</li>
+                <div class="spacer">|</div>
+                <li class="nav2li">Finance, insurance & more</li>
+            </nav>
+            <nav id="nav3">
                 <div class="save"><img src="/Images/saveWhite.png" alt=""></div>
                 <div class="signIn"><img src="./Images/signInWhite.png" alt=""></div>
                 <button class="sellCar">Sell my car</button>
-        </nav>
+            </nav>
+        </div>
     </header>
     
     <div class="main">
@@ -63,7 +65,11 @@
                         <li class="panel-li">Max price</li>
                     </div>
                     <button class="search">Search 480,727 cars</button>
-                    <div class="moreOptions">  
+                    <div class="moreOptions">
+                            <svg class="p-quick-search__reset-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" heigth="30" width="30">
+                                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                <path d="M3.65 15.37a1 1 0 0 1 1.86-.75 7 7 0 0 0 12.98 0 1 1 0 0 1 1.86.76 9 9 0 0 1-16.7 0zM19.43 10H15a1 1 0 0 1 0-2h2.75A7 7 0 0 0 5.5 9.38a1 1 0 1 1-1.86-.75A9 9 0 0 1 19 6.34V4a1 1 0 0 1 2 0v5a1 1 0 0 1-1 1h-.57zM5 16v4a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1h5a1 1 0 0 1 0 2H5z"></path>
+                            </svg>  
                         <li class="Rsearch">Reset search</li>
                         <li class="Moptions">More options</li>
                     </div>
@@ -71,7 +77,8 @@
         </section>
         <section class="row2">
             <div class="latest">Latest brand new car deals</div>
-            <div class="carDeals">View new car deals -></div>
+            <div class="carDeals">View new car deals <svg xmlns="http://www.w3.org/2000/svg" width="13.3" height="12" viewBox="0 0 13.3 12"><path data-label="see all new cars" fill="#ff4436" d="M9.6 5H1c-.55 0-1 .45-1 1s.45 1 1 1h8.6l-3.3 3.3c-.4.38-.4 1.02 0 1.4s1.02.4 1.4 0l5-5c.4-.38.4-1.02 0-1.4l-5-5C7.33-.1 6.7-.1 6.3.3s-.4 1.02 0 1.4L9.6 5z"></path></svg></div>
+            
         </section>
         <section class="row3">
                 <img src="./Images/Screenshot 2019-08-22 at 15.12.07.png" alt="" class="ads">
@@ -80,6 +87,7 @@
                 <img src="./Images/Screenshot 2019-08-22 at 15.31.07.png" alt="" class="sellAd">
         </section>
     </div>
+    
     <footer>
         <div class="footerContentContainer">
                 <div class="footerContent-1">
@@ -136,8 +144,8 @@
                     <div class="copyright">United Kingdom</div>
                     <div class="copyright">Registered number: 03909628</div>
                 </div>
+            </div>
 
-        </div>
     </footer>
     
     
